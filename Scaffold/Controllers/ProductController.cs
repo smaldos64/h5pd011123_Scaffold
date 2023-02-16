@@ -8,13 +8,6 @@ namespace Scaffold.Controllers;
 
 public static class ProductController
 {
-    //static IMapper? mapper;
-
-
-    //static ProductController()
-    //{
-        
-    //}
     public static void MapProductEndpoints (this IEndpointRouteBuilder routes)
     {
         //routes.MapGet("/api/Product", async (DatabaseContext db) =>

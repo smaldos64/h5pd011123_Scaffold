@@ -46,6 +46,4 @@ app.MapProductEndpoints();
 
 app.MapCategoryEndpoints();
 
-//app.MapProductEndpointsLazy();
-
 app.Run();

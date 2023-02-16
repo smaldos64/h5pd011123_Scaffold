@@ -2,10 +2,18 @@
 
 namespace Scaffold.DTO
 {
-    public class CategoryDTO
+    public class CategoryDTOForSave
+    {
+        public string ?CategoryName { get; set; }
+    }
+
+    public class CategoryDTOForUpdate : CategoryDTOForSave
     {
         public int CategoryID { get; set; }
-        public string? CategoryName { get; set; }
+    }
+
+    public class CategoryDTO : CategoryDTOForUpdate
+    {
         public virtual ICollection<ProductCategoryDTO> Products { get; set; }
                = new List<ProductCategoryDTO>();
     }

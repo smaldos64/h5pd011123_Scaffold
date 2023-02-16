@@ -22,10 +22,10 @@ namespace Scaffold.DTO
         public virtual CategoryProductDTO? Category { get; set; }
     }
 
-    public class ProductCategoryDTO
+    public class ProductCategoryDTO : ProductDTOForUpdate
     {
-        public int ProductID { get; set; }
-        public string ?ProductName { get; set; }
+        //public int ProductID { get; set; }
+        //public string ?ProductName { get; set; }
     }
     
 }
